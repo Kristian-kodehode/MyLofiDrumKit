@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@500&family=Sigmar&display=swap"
+      rel="stylesheet"
+    />
+    <script src="script.js" defer></script>
+    <title>LofiDrumkit</title>
+  </head>
+  <body>
+    <!-- NOISE TEXTURE OVERLAY -->
+    <div class="paperoverlay"></div>
+    <!-- THE DRUMKIT DIV -->
+    <div id="drumkit">
+      <!--  -->
+      <section class="pads-section">
+        <!-- THE VINYL SECTION AT THE TOP OF UI -->
+        <section class="vinyl-section">
+          <!-- TURN ON and OFF VINYL -->
+          <label class="vinyl-on-off">
+            <span for="vinyl-check" style="color: whitesmoke"
+              >Start / Stop</span
+            >
+            <input id="vinyl-check" type="checkbox" />
+          </label>
+          <!-- VINYL ILLUSTRATION -->
+          <div class="vinyl">
+            <div class="vinyl-label">Vinyl Noise</div>
+          </div>
+        </section>
+
+        <!-- THE BOTTOM HALF OF THE UI -->
+
+        <!-- DRUM SAMPLER NAME -->
+        <h1>My Lofi Drumkit</h1>
+
+        <!-- DRUM PADS -->
+        <!--  -->
+        <!-- TOP ROW -->
+        <div class="pad-row">
+          <button class="drum-pads" id="pad-perc" data-key="r">
+            Percussion (r)
+          </button>
+          <button class="drum-pads" data-key="">Empty pad</button>
+          <button class="drum-pads" data-key="">Empty pad</button>
+          <button class="drum-pads" data-key="">Empty pad</button>
+        </div>
+        <!-- BOTTOM ROW -->
+        <div class="pad-row">
+          <button class="drum-pads" id="pad-kick" data-key="f">Kick (f)</button>
+          <button class="drum-pads" id="pad-snare" data-key="g">
+            Snare (g)
+          </button>
+          <button class="drum-pads" id="pad-hh" data-key="h">
+            Closed Hat (h)
+          </button>
+          <button class="drum-pads" id="pad-oh" data-key="j">
+            Open Hat (j)
+          </button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

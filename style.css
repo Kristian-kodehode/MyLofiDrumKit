@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Noto Serif JP", serif;
+  font-family: "Sigmar", cursive;
+}
+/* Styling the main box, the drumkit */
+#drumkit {
+  margin: 2em auto;
+  width: 40rem;
+  height: 40rem;
+  border-radius: 1em;
+  padding-bottom: 2em;
+  background-color: #025959;
+  mix-blend-mode: multiply;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+/* Adjusting the heading */
+h1 {
+  text-align: center;
+  font-size: 4rem;
+  color: #378585;
+}
+/* Drum pads styling. */
+.drum-pads {
+  border: none;
+  border-radius: 0.4em;
+  background-color: #f2f0d5;
+  color: lightslategray;
+  width: 8rem;
+  height: 8rem;
+  margin: 0.5em;
+  font-weight: 700;
+}
+/* Drumpads when clicked */
+.drum-pads:active {
+  color: lightblue;
+  background-color: lightslategray;
+}
+
+/* BG Texture */
+.paperoverlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  background-image: url(images/Dust_001.jpg);
+  mix-blend-mode: multiply;
+  opacity: 0.1;
+}
+
+/* Styling the vinyl and Start Stop Button */
+.vinyl-section {
+  display: flex;
+  align-items: end;
+  gap: 1em;
+}
+
+label,
+button {
+  cursor: pointer;
+}
+
+.vinyl-on-off {
+  background-color: #f1f1f13e;
+  border: 1px solid rgba(255, 255, 255, 0.219);
+  border-radius: 0.5rem;
+  width: 200px;
+  height: 200px;
+  padding: 1em;
+  text-align: center;
+}
+
+.vinyl-on-off:active {
+  background-color: #025959;
+  transition: 1s;
+}
+#vinyl-check {
+  display: none;
+}
+
+/* VINYL Styling */
+.vinyl,
+.vinyl-label {
+  border-radius: 100%;
+}
+/* Vinyl illustration */
+.vinyl {
+  width: 200px;
+  height: 200px;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* Vinyl illustration label */
+.vinyl-label {
+  width: 30%;
+  height: 30%;
+  padding: 0.5em;
+  background-color: #f2f0d5;
+  color: #59584e;
+  text-align: center;
+  font-size: 14px;
+}
+
+/* Vinyl animation */
+.spin {
+  animation: spin 3s linear infinite;
+}
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
