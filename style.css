@@ -71,6 +71,9 @@ button {
 
 .vinyl-on-off {
   background-color: #f1f1f13e;
+  background-image: url(https://media.giphy.com/media/XbJYBCi69nyVOffLIU/giphy.gif?cid=ecf05e47ojovfq511x1g7jx174vc9pemjmkaat31rx3mox09&ep=v1_gifs_search&rid=giphy.gif&ct=g);
+  background-repeat: no-repeat;
+  background-size: cover;
   border: 1px solid rgba(255, 255, 255, 0.219);
   border-radius: 0.5rem;
   width: 200px;

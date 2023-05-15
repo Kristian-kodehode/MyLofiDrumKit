@@ -14,7 +14,6 @@ const hhSample = new Audio("sounds/hatClosed.wav");
 const ohSample = new Audio("sounds/hatOpen.wav");
 const percSample = new Audio("sounds/perc.wav");
 const vinylSample = new Audio("sounds/vinylRain.wav");
-vinylSample.volume = 0.4;
 
 //Array that holds the specified keyboard keys and also the samples.
 const sampleLibrary = [
@@ -46,6 +45,7 @@ function clickVinyl() {
   });
 }
 document.addEventListener("click", clickVinyl);
+vinylSample.volume = 0.4;
 
 //
 
